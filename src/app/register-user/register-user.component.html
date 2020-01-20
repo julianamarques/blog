@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="register-user-container">
+    <h2>Criar Nova Conta</h2>
+    <mat-form-field>
+        <input matInput [(ngModel)]="name" type="text" placeholder="Nome" required />
+    </mat-form-field>
+    
+    <mat-form-field>
+        <input matInput [(ngModel)]="email" type="email" placeholder="Email" required />
+    </mat-form-field>
+    
+    <mat-form-field>
+        <input matInput [(ngModel)]="password" type="password" placeholder="Senha" required />
+    </mat-form-field>
+    
+    <a mat-raised-button color="primary" (click)="saveUser()">Salvar Usuário</a>
+</div>

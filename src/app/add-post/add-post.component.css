@@ -1,0 +1,14 @@
+.new-post-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+}
+
+.new-post-container h2 {
+    text-align: center;
+}
+
+.new-post-container a {
+    margin-top: 1rem;
+}

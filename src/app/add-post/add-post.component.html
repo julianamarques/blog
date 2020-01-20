@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<div class="new-post-container">
+    <h2>Novo Post</h2>
+
+    <mat-form-field>
+        <input matInput [(ngModel)]="title" type="text" placeholder="Título" required />
+    </mat-form-field>
+
+    <mat-form-field>
+        <textarea matInput [(ngModel)]="content" placeholder="Conteúdo"></textarea>
+    </mat-form-field>
+
+    <mat-checkbox [(ngModel)]="public">Publicar</mat-checkbox>
+
+    <a mat-raised-button color="primary" (click)="savePost()">Salvar Post</a>
+</div>

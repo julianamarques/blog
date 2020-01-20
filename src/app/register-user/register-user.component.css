@@ -1,0 +1,10 @@
+.register-user-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+}
+
+.register-user-container h2 {
+    text-align: center;
+}

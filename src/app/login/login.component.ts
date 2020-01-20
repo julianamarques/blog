@@ -24,9 +24,8 @@ export class LoginComponent implements OnInit {
     };
 
     this.authService.login(this.userData).subscribe(
-      response => this.router.navigate(['']),
+      response => this.router.navigate(['perfil']),
       error => alert(JSON.stringify(error))
     );
   }
-
 }

@@ -1,6 +1,17 @@
-<div>
-    <input [(ngModel)]="email" type="text" placeholder="Email" />
-    <input [(ngModel)]="password" type="password" placeholder="Senha" />
+<app-navbar></app-navbar>
 
-    <a (click)="login()">Entrar</a>
+<div class="login-container">
+    <h2>Login</h2>
+
+    <mat-form-field>
+        <input matInput [(ngModel)]="email" type="text" placeholder="Email" required />
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput [(ngModel)]="password" type="password" placeholder="Senha" required />
+    </mat-form-field>
+
+    <a mat-raised-button color="primary" (click)="login()">Entrar</a>
+
+    <a routerLink="/register-user">Registrar</a>
 </div>
